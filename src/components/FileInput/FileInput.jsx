@@ -5,12 +5,18 @@ import xIcon from "../../assets/ic_X.png";
 const ImgPreviewWrap = styled.div`
   width: 168px;
   height: 168px;
+  background-image: url(${({ src }) => src});
+  background-size: cover;
+  background-position: center;
   border-radius: 12px;
   position: relative;
 
   @media (min-width: 1200px) {
     width: 282px;
     height: 282px;
+    background-image: url(${({ src }) => src});
+    background-size: cover;
+    background-position: center;
     border-radius: 12px;
   }
 `;
@@ -78,8 +84,7 @@ const FileInput = ({ name, value, onChange }) => {
         ref={inputRef}
       />
       {value && (
-        <ImgPreviewWrap>
-          <img src={preview} alt="이미지 미리보기" width="168" height="168" />
+        <ImgPreviewWrap src={preview}>
           <Button type="button" onClick={handleClearClick}></Button>
         </ImgPreviewWrap>
       )}
