@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "@/components/BoardItem.module.css";
 import formatDate from "@/lib/formatDate";
 import profile from "@/public/assets/profile.svg";
+import Link from "next/link";
 
 interface ItemProps {
   board: BoardList;
@@ -12,7 +13,13 @@ export default function Item({ board }: ItemProps) {
   return (
     <div className={styles.container}>
       <div className={styles.titleImageWrap}>
-        <h3 className={styles.title}>{board.title}</h3>
+        <Link
+          href="/board/[id]"
+          as={`/board/${board.id}`}
+          className={styles.title}
+        >
+          {board.title}
+        </Link>
         {board.image && (
           <div className={styles.itemImage}>
             <Image fill src={board.image} alt={board.title} />

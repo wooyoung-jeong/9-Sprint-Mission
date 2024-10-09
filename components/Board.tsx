@@ -5,6 +5,7 @@ import styles from "@/components/Board.module.css";
 import SortDropDown from "./SortDropDown";
 import { useSort } from "@/context/SortContext";
 import SearchForm from "./SearchForm";
+import Link from "next/link";
 
 interface Writer {
   id: number;
@@ -93,7 +94,9 @@ export default function Board() {
     <section>
       <div className={styles.boardTextSubmitWrap}>
         <h2 className={styles.boardText}>게시글</h2>
-        <button className={styles.submitButton}>글쓰기</button>
+        <Link className={styles.submitButton} href="/addboard">
+          글쓰기
+        </Link>
       </div>
       <div className={styles.inputDropBoxWrap}>
         <SearchForm onSearch={handleSearch} />

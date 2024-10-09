@@ -1,0 +1,59 @@
+.fileInputContainer {
+  width: fit-content;
+  height: 168px;
+}
+
+.fileInputLabel {
+  position: relative;
+  display: inline-block;
+  width: 168px;
+  height: 168px;
+  background-color: #f3f4f6;
+  border-radius: 12px;
+  padding: 42px 47px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.labelWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.image {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.labelText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #9ca3af;
+}
+
+.input {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .fileInputContainer {
+    width: fit-content;
+    height: 282px;
+  }
+
+  .fileInputLabel {
+    position: relative;
+    display: inline-block;
+    width: 282px;
+    height: 282px;
+    background-color: #f3f4f6;
+    border-radius: 12px;
+    padding: 98px 104px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+}

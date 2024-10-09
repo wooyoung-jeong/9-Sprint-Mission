@@ -1,0 +1,109 @@
+.productContainer {
+  padding: 16px 16px 406px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.registWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.registTitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23.87px;
+  color: #1f2937;
+}
+
+.registButton {
+  border-style: none;
+  border-radius: 8px;
+  background-color: #3692ff;
+  padding: 12px 23px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.09px;
+  color: #ffffff;
+}
+
+.registButton:disabled {
+  background-color: #9ca3af !important;
+}
+
+.inputForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1f2937;
+}
+
+.inputWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.titleInput {
+  border-style: none;
+  border-radius: 12px;
+  padding: 16px 24px;
+  background-color: #f3f4f6;
+}
+
+.titleInput::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #9ca3af;
+}
+
+.description {
+  height: 200px;
+  border-style: none;
+  border-radius: 12px;
+  padding: 16px 24px;
+  background-color: #f3f4f6;
+}
+
+.description::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #9ca3af;
+}
+
+@media screen and (min-width: 768px) {
+  .productContainer {
+    padding: 16px 24px 305px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .inputForm {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1f2937;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .productContainer {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 24px 0 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}

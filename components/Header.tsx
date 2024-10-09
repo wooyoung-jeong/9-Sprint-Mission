@@ -15,7 +15,7 @@ export default function Header() {
         <Link className={styles.navigatorLink} href="/boards">
           자유게시판
         </Link>
-        <Link className={styles.navigatorLink} href="/usedMarket">
+        <Link className={styles.navigatorLink} href="/usedmarket">
           중고마켓
         </Link>
       </div>
